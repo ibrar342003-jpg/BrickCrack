@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brick Crack by Ibrar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Intro Screen ===== -->
+  <div id="intro-screen" class="screen active">
+    <div class="intro-content">
+      <h1>🧱 Brick Crack by Ibrar 🕹️</h1>
+      <p>Break all the bricks, collect points, and don’t let the ball fall!<br>
+      Playable on PC (keyboard + mouse) and Mobile (touch buttons).</p>
+      <button id="start-btn">Start Game</button>
+      <button id="how-btn">How to Play</button>
+      <button id="exit-btn">Exit</button>
+    </div>
+  </div>
+
+  <!-- ===== How to Play Screen ===== -->
+  <div id="how-screen" class="screen">
+    <div class="how-content">
+      <h2>🎮 How to Play</h2>
+      <ul>
+        <li>Move the paddle using Left/Right arrow keys, A/D keys, mouse, or touch buttons.</li>
+        <li>Bounce the ball to break all bricks.</li>
+        <li>Don’t let the ball fall below the paddle.</li>
+        <li>Power-ups may appear (Extra Life, Bigger Paddle, Multi-ball).</li>
+      </ul>
+      <button id="back-btn">⬅ Back</button>
+    </div>
+  </div>
+
+  <!-- ===== Game Screen ===== -->
+  <div id="game-screen" class="screen">
+    <header>
+      <h2>Brick Crack by Ibrar</h2>
+      <div class="info">
+        <p>Level: <span id="level">1</span></p>
+        <span>Score: <span id="score">0</span></span>
+        <span>Lives: <span id="lives">3</span></span>
+        <button id="pause-btn">⏸ Pause</button>
+      </div>
+    </header>
+
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+
+    <!-- Mobile Controls -->
+    <div id="mobile-controls">
+      <button id="left-btn">⬅️</button>
+      <button id="right-btn">➡️</button>
+    </div>
+
+    <footer>
+      <p>Developed by <b>Ibrar Ahmad</b> | Brick Crack © 2025</p>
+    </footer>
+  </div>
+
+  <!-- ===== Pause Screen ===== -->
+  <div id="pause-screen" class="screen">
+    <div class="pause-content">
+      <h2>⏸ Game Paused</h2>
+      <button id="resume-btn">▶️ Resume</button>
+      <button id="restart-btn">🔄 Restart</button>
+      <button id="menu-btn">🏠 Main Menu</button>
+    </div>
+  </div>
+
+  <!-- ===== Game Over Screen ===== -->
+  <div id="gameover-screen" class="screen">
+    <div class="gameover-content">
+      <h2>💀 Game Over!</h2>
+      <p>Final Score: <span id="final-score">0</span></p>
+      <button id="retry-btn">Play Again</button>
+      <button id="menu-btn2">Back to Menu</button>
+    </div>
+  </div>
+
+  <!-- ===== Victory Screen ===== -->
+  <div id="victory-screen" class="screen">
+    <div class="victory-content">
+      <h2>🏆 You Win!</h2>
+      <p>Final Score: <span id="win-score">0</span></p>
+      <button id="next-level-btn">Next Level</button>
+      <button id="menu-btn3">Back to Menu</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
